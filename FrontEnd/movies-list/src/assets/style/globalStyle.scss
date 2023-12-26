@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// Override primary color
+$primary: #2bd17e;
+$secondary: #eb5757;
+$danger: #eb5757;
+$light: #fff;
+$bg-color: #093545;
+$text-color: #fff;
+$field-bg-color: #224957;
+$card-bg-color: #092c39;
+$card-hover-bg-color: rgba(255, 255, 255, 0.09);
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+  background-image: url("../images/bottomDesign.svg");
+  background-position: bottom;
+  background-size: 100% 10%;
+  background-repeat: no-repeat;
+}
+.app {
+  min-height: 100vh;
+}
+.main-section {
+  padding-bottom: 200px;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 48px;
+  line-height: 56px;
+}
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+}
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+}
+h6 {
+  font-size: 16px;
+  line-height: 24Fpx;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+/* Spinner Style Start */
+.general-spinner {
+  margin: auto;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.global-spinner {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+/* Spinner Style End */
+
+/*Pagination style start */
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  cursor: pointer;
+
+  .previous,
+  .next {
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      color: $light;
+      margin-inline: 3px;
+    }
+  }
+  .active {
+    background-color: $primary;
+    border-radius: 4px;
+  }
+
+  .page-item {
+    list-style: none;
+    padding: 4px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    border-radius: 4px;
+    margin-inline: 2px;
+  }
+}
+
+/*Pagination style end */
+
+/* Fields Style Start */
+
+input[type="checkbox"] {
+  background-color: $field-bg-color;
+  border-color: $field-bg-color;
+  &:checked {
+    box-shadow: none;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+textarea,
+textarea.form-control,
+input.form-control,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+[type="text"].form-control,
+[type="password"].form-control,
+[type="email"].form-control,
+[type="tel"].form-control,
+[contenteditable].form-control {
+  background-color: $field-bg-color;
+  border-color: $field-bg-color;
+  color: #fff;
+  padding: 11px 16px;
+  font-size: 14px;
+  &::placeholder {
+    color: #fff;
+  }
+  &:focus {
+    box-shadow: none;
+    color: $field-bg-color;
+    background-color: #fff;
+    &::placeholder {
+      color: $field-bg-color;
+    }
+  }
+}
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  border-color: $danger !important;
+}
+
+/* Fields Style End */
+
+/* Button Style start*/
+button.btn {
+  padding-block: 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  &.btn-primary {
+    color: #fff;
+  }
+}
+/* Button Style end*/
+
+/* Movie card Style start*/
+.movie-card {
+  background-color: $card-bg-color;
+  border-radius: 12px;
+  color: $light;
+  padding: 8px 8px 16px 8px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  .card-img-top {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .card-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  .card-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &:hover {
+    background-color: $card-hover-bg-color;
+    transform: scale(1.05);
+    z-index: 1;
+    backdrop-filter: blur(100px);
+  }
+}
+/* Movie card Style end*/
+
+/*Image uploader style Strat */
+
+.drag-area {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  background-color: $field-bg-color;
+  overflow: hidden;
+}
+/*Image uploader style End */
+
+/* Icon style start*/
+.feather-edit-icon {
+  filter: brightness(0) invert(1);
+}
+/* Icon style end*/
+
+@include media-breakpoint-down(sm) {
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 23px;
+  }
+}
