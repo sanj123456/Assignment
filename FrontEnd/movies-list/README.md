@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+![screencapture-localhost-3000-2023-12-27-12_40_38](https://github.com/sanj123456/Assignment/assets/37290949/34dd42f1-2c36-424e-a193-149f55112975)# Movie Project Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Movie Project Frontend! This project is a React application that allows users to log in and interact with movie data. It utilizes React-Bootstrap for design and Redux for API calls.
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+The Movie Project Frontend is a React application designed for managing movie data. It includes a login screen and various screens for displaying, creating, and editing movies. The movie entity comprises three fields: title (text), publishing year (number), and poster (image).
 
-### `npm start`
+## Getting Started
+- create-react-app movies-list
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Before you begin, ensure you have met the following requirements:
+- Node.js (version 16 or higher)
+- npm or yarn
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+The project structure is organized as follows:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+movies-list/
+|-- src/
+| |-- assets/
+| | |-- images/
+| | |-- style/
+| |-- axios/
+| |-- components/
+| |-- constants/
+| |-- redux/
+| | |-- reducers/
+| |-- routes/
+| | |-- routes/
+| |-- services/
+| | |-- authServices/
+| | |-- moviesServices/
+| |-- utils/
+| |-- view/
+| | |-- home/
+| | |-- login/
+| | |-- movies/
+| | | |-- add-edit/
+| | |-- register/
+|-- public/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* `src/view/`: Contains React components for Login, MovieList, MovieForm, etc.
+* `src/redux/`: Manages Redux-related actions and reducers.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Dependencies**
 
-### `npm run eject`
+* React
+* bootstrap
+* React-Bootstrap
+* Redux-toolkit
+* sass
+* react-hook-form
+* react-paginate
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To install the project dependencies, run the following command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+npm install
+# or
+yarn install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Configuration
+Create a .env file in the project root and add the necessary environment variables:
+{backendurl}
 
-## Learn More
+Running the App
+To start the react app, run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm start
 
-### Code Splitting
+## Features
+1.Login Screen: Allows users to log in to the application.
+![image](https://github.com/sanj123456/Assignment/assets/37290949/19f2b259-ad01-45fb-a4b2-96f1ca2d1a22)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2.Register Screen: Allows users to create account in the application.
+![image](https://github.com/sanj123456/Assignment/assets/37290949/48efe437-d876-42a7-bef7-7d72fa86d462)
 
-### Analyzing the Bundle Size
+2.Movie List: Displays a list of movies.
+![image](https://github.com/sanj123456/Assignment/assets/37290949/e7f773ad-9b43-4b4e-a115-0ed76537c4dd)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3.Movie Form: Allows users to create and edit movies.
+![image](https://github.com/sanj123456/Assignment/assets/37290949/fa85bccd-0b84-4ace-82a0-891be5c1700c)
+![image](https://github.com/sanj123456/Assignment/assets/37290949/bfa4cffc-4e04-4f05-8868-347312b903f9)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Usage Examples
 
-### Advanced Configuration
+Redux Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1.Import useDispatch and useSelector in your component:
+import { useDispatch, useSelector } from 'react-redux';
 
-### Deployment
+## Future Development
+1.Comment Section: Add a comment section for each movie.
+2.Search Filter: Implement a search filter for movies.
+3.Category Filter : Implement a Category Filter for movies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Deployment
+The Front End React project is deploy on Netlify.
 
-### `npm run build` fails to minify
+-
+Netlify is a cloud platform that provides a range of services for modern web development, primarily focused on simplifying the deployment and hosting of web applications. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributing
+Contributions to this project are welcome. Please follow the standard fork-and-pull request workflow.
+
+License
+MIT License
+
+Happy Coding
