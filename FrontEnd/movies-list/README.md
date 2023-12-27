@@ -19,31 +19,32 @@ Before you begin, ensure you have met the following requirements:
 ## Project Structure
 
 The project structure is organized as follows:
-
-movies-list
-    ├── src                    
-    │   ├── assets           
-    │   ├── images   
-    │   ├── style   
-    │   └── ...    
-    ├── axios                    
-    ├── components                    
-    ├── constants                    
-    ├── redux                    
-    │   └── reducers 
-    ├── routes                    
-    │   └── routes 
-    ├── services                    
-    │   ├── authServices           
-    │   └── moviesServices 
-    ├── utils                    
-    ├── view                    
-    │   ├── home           
-    │   ├── login   
-    │   ├── movies   
-    │   └── register 
-    └── ...
-    
+```bash
+.
+└── movies-list
+    └── src
+        ├── assets
+        │   ├── images
+        │   └── style
+        ├── axios
+        ├── components
+        ├── constants
+        ├── redux
+        │   └── reducers
+        ├── routes
+        │   └── routes
+        ├── services
+        │   ├── authServices
+        │   └── moviesServices 
+        ├── utils
+        ├── view
+        │   ├── home
+        │   ├── login
+        │   ├── movies
+        │   │   └── add-edit
+        │   └── register
+        └── ...
+```
 
 * `src/view/`: Contains React components for Login, MovieList, MovieForm, etc.
 * `src/redux/`: Manages Redux-related actions and reducers.
