@@ -19,6 +19,7 @@ const MoviesList = () => {
         setLoading(true)
         try {
             await getAllMyMovies()
+            window.scrollTo(0, 0)
         } catch (e) { } finally {
             setLoading(false)
         }
