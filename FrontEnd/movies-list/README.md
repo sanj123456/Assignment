@@ -79,7 +79,7 @@ npm start
 
 ## Features
 1.Login Screen: Allows users to log in to the application.
-![image](https://github.com/sanj123456/Assignment/assets/37290949/19f2b259-ad01-45fb-a4b2-96f1ca2d1a22)
+![image](https://github.com/sanj123456/Assignment/assets/37290949/0aaccafc-0b00-4671-9c45-676958a9b32a)
 
 2.Register Screen: Allows users to create account in the application.
 ![image](https://github.com/sanj123456/Assignment/assets/37290949/48efe437-d876-42a7-bef7-7d72fa86d462)
@@ -88,8 +88,8 @@ npm start
 ![image](https://github.com/sanj123456/Assignment/assets/37290949/e7f773ad-9b43-4b4e-a115-0ed76537c4dd)
 
 3.Movie Form: Allows users to create and edit movies.
-![image](https://github.com/sanj123456/Assignment/assets/37290949/fa85bccd-0b84-4ace-82a0-891be5c1700c)
-![image](https://github.com/sanj123456/Assignment/assets/37290949/bfa4cffc-4e04-4f05-8868-347312b903f9)
+![image](https://github.com/sanj123456/Assignment/assets/37290949/5a4be9ed-eb8a-456f-b72b-94af8593fb25)
+![image](https://github.com/sanj123456/Assignment/assets/37290949/40764e8a-8d6c-4247-8be3-5a080b4dc62c)
 
 
 ## Usage Examples
