@@ -81,7 +81,7 @@ const AddEditMovie = () => {
             if (!isEdit) {
                 reset()
             }
-
+            navigate("/")
         } catch (e) {
         } finally {
             setSubmitLoading(false)
