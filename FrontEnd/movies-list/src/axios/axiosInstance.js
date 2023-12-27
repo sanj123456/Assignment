@@ -2,6 +2,7 @@ import axios from "axios";
 import { getAccessToken } from "../services/helper";
 import { constants } from "../constant/constants";
 import { handleLogout } from "../services/authServices/authServices";
+import { toast } from "react-toastify";
 
 const axiosInstance = axios.create({
     baseURL: constants.baseUrl,
