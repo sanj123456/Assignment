@@ -21,9 +21,9 @@ const Header = ({ title, subItem }) => {
                 <h2 className='m-0'>{title}</h2>
                 {subItem}
             </div>
-            <div className='d-flex justify-content-between align-items-center fw-bold gap-2'>
+            <div onClick={onLogoutClick} className='d-flex justify-content-between align-items-center fw-bold gap-2 cursor-pointer'>
                 Logout
-                <img onClick={onLogoutClick} src={logoutIcon} className='cursor-pointer' alt="logout" />
+                <img  src={logoutIcon} className='' alt="logout" />
             </div>
         </div>
     )
