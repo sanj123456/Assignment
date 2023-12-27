@@ -22,7 +22,7 @@ axiosInstance.interceptors.request.use(function (config) {
 axiosInstance.interceptors.response.use(function (response) {
     return response;
 }, function (error) {
-
+    toast.error(error.response.data.error ? error.response.data.error : "Something went wrong!")
     if (error.response.status === 401) {
         handleLogout()
     }
