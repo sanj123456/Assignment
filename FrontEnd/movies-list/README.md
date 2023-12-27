@@ -20,7 +20,7 @@ Before you begin, ensure you have met the following requirements:
 
 The project structure is organized as follows:
 
-movies-list/
+movies-list/--
 |-- src/
 | |-- assets/
 | | |-- images/
