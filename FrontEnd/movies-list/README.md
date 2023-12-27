@@ -1,4 +1,4 @@
-![screencapture-localhost-3000-2023-12-27-12_40_38](https://github.com/sanj123456/Assignment/assets/37290949/34dd42f1-2c36-424e-a193-149f55112975)# Movie Project Frontend
+# Movie Project Frontend
 
 Welcome to the Movie Project Frontend! This project is a React application that allows users to log in and interact with movie data. It utilizes React-Bootstrap for design and Redux for API calls.
 
