@@ -83,7 +83,7 @@ const Login = () => {
                         </Form.Group>
                         <Form.Group className="mb-4">
                             <Form.Control
-                                type="text"
+                                type="password"
                                 placeholder="Password"
                                 isInvalid={!!errors.password}
                                 {...register("password")} />
