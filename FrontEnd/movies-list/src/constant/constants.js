@@ -1,5 +1,6 @@
 export const constants = {
-    baseUrl: "https://assesmentbackend.onrender.com/",/* temp baseUrl */
+    // baseUrl: "https://assesmentbackend.onrender.com/",/* temp baseUrl */
+    baseUrl: "https://testyourapp.online:4203/backend/",/* temp baseUrl */
     accessToken: "accessToken",
     rememberMe: "rememberMe",
     endPoints: {
