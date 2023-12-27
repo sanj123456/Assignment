@@ -6,7 +6,9 @@ import store from "../../redux/store"
 export const handleRegister = async (payload) => {
     try {
         const res = await postRequest(constants.endPoints.register, payload)
-    } catch (e) { }
+    } catch (e) {
+        throw e
+    }
 }
 
 export const handleLogin = async (payload) => {
